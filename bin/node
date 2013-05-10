@@ -180,7 +180,6 @@ run_npm "install"
 run_npm "install -g bower"
 run_npm "install grunt"
 run_npm "install -g grunt-cli"
-run_npm "install --production"
 run_npm "rebuild"
 echo "Dependencies installed" | indent
 
