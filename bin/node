@@ -14,6 +14,9 @@ unset GIT_DIR
 SCONS_VERSION="1.2.0"
 S3_BUCKET="heroku-buildpack-nodejs"
 
+export GEM_PATH=$GEM_PATH:$PWD/.gem
+export PATH=$PATH:$PWD/.gem/bin
+
 # parse and derive params
 BUILD_DIR=$1
 CACHE_DIR=$2
