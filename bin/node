@@ -176,6 +176,7 @@ export CPPPATH="$INCLUDE_PATH"
 
 # install dependencies with npm
 echo "-----> Installing dependencies with npm"
+run_npm "install"
 run_npm "install -g bower"
 run_npm "install grunt"
 run_npm "install -g grunt-cli"
