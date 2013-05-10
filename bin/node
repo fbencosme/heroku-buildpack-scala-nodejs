@@ -176,7 +176,7 @@ export CPPPATH="$INCLUDE_PATH"
 
 # install dependencies with npm
 echo "-----> Installing dependencies with npm"
-gem install compass
+gem install compass --no-rdoc --no-ri --install-dir "$PWD/.gem" | indent
 run_npm "install"
 run_npm "install -g bower"
 run_npm "install grunt"
