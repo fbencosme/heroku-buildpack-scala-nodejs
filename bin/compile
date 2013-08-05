@@ -35,7 +35,7 @@ echo "done"
 pushd $BUILD_DIR/client
 . $BIN_DIR/node
 echo "-----> Running grunt on the client"
-bower update
+bower install 
 grunt --force
 popd
 
