@@ -32,11 +32,11 @@ jdk_overlay ${BUILD_DIR}
 echo "done"
 
 #run node compile
+pushd $BUILD_DIR/client
 . $BIN_DIR/node
 echo "-----> Running grunt on the client"
-pushd $BUILD_DIR/client
 bower update
-grunt
+grunt --force
 popd
 
 
