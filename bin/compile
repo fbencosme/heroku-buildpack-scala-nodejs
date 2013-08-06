@@ -34,8 +34,9 @@ echo "done"
 #run node compile
 pushd $BUILD_DIR/client
 . $BIN_DIR/node
-echo "-----> Running grunt on the client"
+echo "-----> Running bower install"
 bower install 
+echo "-----> Running grunt on the client"
 grunt --force
 popd
 
