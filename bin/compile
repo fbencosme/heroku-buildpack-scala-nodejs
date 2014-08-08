@@ -32,11 +32,11 @@ jdk_overlay ${BUILD_DIR}
 echo "done"
 
 #run node compile
-pushd $BUILD_DIR/client
+pushd $BUILD_DIR/web-ui
 . $BIN_DIR/node
 echo "-----> Running bower install"
 bower install 
-echo "-----> Running grunt on the client"
+echo "-----> Running grunt on the web-ui"
 grunt --force
 popd
 
