@@ -41,7 +41,7 @@ echo "done"
 
 #run node compile
 pushd $BUILD_DIR/web-ui
-. $BIN_DIR/node "$0" "$1"
+. $BIN_DIR/node "$BUILD_DIR/web-ui" "$1"
 echo "-----> Running bower install"
 bower install 
 echo "-----> Running grunt on the web-ui"
